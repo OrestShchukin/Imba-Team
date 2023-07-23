@@ -345,7 +345,7 @@ header{
     border-radius: 0px 0px 5rem 20rem;
     height: 100%;
     width:90%;
-    background: top/cover url('../img/lex.png');
+    background: top right /cover url('../img/lex.png');
     z-index: 2;
     /* background-color: aqua; */
 }
@@ -625,19 +625,20 @@ header{
     cursor: pointer;
 }
 
-.lp-button:hover{
-    background-color: var(--second-color);
-    scale: 0.98 !important;
-}
 .lp-button p{
     z-index: 4 !important;
     align-self: flex-end !important;
 }
 
+/* .lp-button:hover{
+    background-color: var(--second-color);
+    scale: 0.98 !important;
+} */
 
+/* 
 .lp-button:hover p{
-    color: black;
-}
+    color: var(--main-color);
+} */
 
 
 /* Prices */
@@ -846,37 +847,15 @@ header{
     transition: all .15s cubic-bezier(0.075, 0.82, 0.165, 1) 0.12s ;
 }
 
-.review-more-button:before{
-    transform: translateY(100%);
-}
-.review-more-button:hover{
-    background-color: var(--second-color);
-    color: black;
-    scale: 1.02;
-}
-
-.review-more-button:hover:after{
-    transform: translateY(0);
-    opacity: 1;
-}
-
 .review-more-button p{
     z-index: 10;
     color: var(--main-text-color);
     transition: all .15s linear;
 }
-.review-more-button:hover p{
-    color: black;
+
+.review-more-button:before{
+    transform: translateY(100%);
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -887,7 +866,7 @@ header{
 
 /* restore slider */
 
-.restore-slider-darkener{
+/* .restore-slider-darkener{
     position: absolute;
     top: 0;
     left: 0;
@@ -937,15 +916,15 @@ header{
 
 .restore-slider-button-right, .restore-slider-button-left{
     display: none;
-}
+} */
 /* restore slider ends */
 
 /* restore-indormation block */
-.restore-information-block{
+/* .restore-information-block{
     display: grid;
     grid-template-columns: 40% 60%;
-    /* padding: 20px; */
-}
+    /* padding: 20px;
+}  */
 .restore-text-block{
     display: flex;
     flex-direction: column;
@@ -994,7 +973,7 @@ header{
     width: 100%;
     filter: drop-shadow(0 15px 30px rgb(0, 0, 0));
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1) .1s;
-}
+} 
 
 
 /* question form starts */
@@ -1195,22 +1174,54 @@ footer li a{
     
     transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);;
 }
-.button-one:hover{
-    color: var(--main-color-second);
-    background-color: rgba(0, 0, 0, 0.553);
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    width: 100%;
-    border-color: var(--main-color-second);
-    transform: scale(0.98);
-    
-}
+
 
   
   
-  
+@media screen and (min-width: 1040px) {
+    .lp-button:hover{
+        background-color: var(--second-color);
+        scale: 0.98 !important;
+    }
+    .lp-button p{
+        z-index: 4 !important;
+        align-self: flex-end !important;
+    }
+    
+    .lp-button:hover p{
+        color: var(--main-color);
+    }
+
+    .button-one:hover{
+        color: var(--main-color-second);
+        background-color: rgba(0, 0, 0, 0.553);
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        width: 100%;
+        border-color: var(--main-color-second);
+        transform: scale(0.98);
+        
+    }
+
+    .review-more-button:hover{
+        background-color: var(--second-color);
+        color: black;
+        scale: 1.02;
+    }
+    
+    .review-more-button:hover:after{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    
+    .review-more-button:hover p{
+        color: black;
+    }
+    
+}
   
   
   
@@ -1407,7 +1418,12 @@ footer li a{
         grid-gap: 1rem;
     }
     .about-us-image-box{
-        min-height: 50vh;
+        min-height: 60vh;
+        margin-bottom: -10vh;
+        z-index: 2;
+    }
+    .about-us-text-container{
+        z-index: 3;
     }
     .about-us-image-box-logo{
         border-radius: 0px 0px 15rem 7rem;
