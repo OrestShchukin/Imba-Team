@@ -323,8 +323,45 @@ header{
     font-family: 'Roboto', sans-serif;
     color: var(--main-color-second);
     padding: 3vw 0rem;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
     /* fade-effect */
     /* animation: text-shadow-fade 4s ease-in-out infinite; */
+}
+
+.about-us-instagram-box{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 0rem;
+    z-index: 2;
+    /* width: 60%; */
+    max-width: 100%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--main-color-second);
+    box-shadow: var(--main-box-shadow);
+    opacity: .95;
+    transform: scale(0.65);
+}
+
+.about-us-image-box h2{
+    padding: 0;
+    display: inline-block;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: var(--font-family-second);
+    font-size: 2rem;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.instagram-logo{
+    height: 60px;
+    width: auto;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);;
 }
 
 .top-element{
@@ -337,11 +374,13 @@ header{
 }
 
 .about-us-image-box{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .about-us-image-box-logo{
+    position: relative;
     border-radius: 0px 0px 5rem 20rem;
     height: 100%;
     width:90%;
@@ -1413,6 +1452,9 @@ footer li a{
 }
 
 @media screen and (max-width: 440px){
+    .top-wave{
+        margin-top: 0;
+    }
     .about-us-container-inner{
         grid-template-columns: 1fr;
         grid-gap: 1rem;
@@ -1438,7 +1480,7 @@ footer li a{
     .about-us-gradient-background{
         position: absolute;
         display: flex;
-        top: 0;
+        top: -20vh;
         left: 0;
         width: 100%;
         height: 100%;
@@ -1464,6 +1506,10 @@ footer li a{
     }
     .recruting-container .button-one {
         font-size: 5vw;
+    }
+    .about-us-instagram-box{
+        bottom: 5.5rem;
+        right: 1.5rem;
     }
     
 }
