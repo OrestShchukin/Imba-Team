@@ -495,7 +495,7 @@ header{
 .whom-for{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     padding: 1rem;
     grid-gap:1rem;
 }
@@ -689,7 +689,7 @@ header{
 .learning-program-container{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     padding: 1rem;
     grid-gap:2rem;
 }
@@ -744,7 +744,7 @@ header{
     width: 100%;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     grid-gap: 2rem;
     position: relative;
     /* height: 90vh; */
