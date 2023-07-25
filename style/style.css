@@ -427,6 +427,65 @@ header{
     opacity: .9;
 }
 
+.info-block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+.info-block .button-one{
+    text-align: center;
+}
+.info-block .button-one:hover{
+    background-color: var(--main-color);
+}
+.info-block-element{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.info-block-header{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+
+
+}
+
+.info-block-element h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-second);
+    font-size: 2rem;
+    background-color: var(--main-color);
+    padding: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: var(--main-box-shadow);
+}
+
+.info-block-element:first-of-type h2, .info-block-element:nth-of-type(3) h2{
+    font-size: 3rem;
+}
+
+.info-text-block{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--main-color-second);
+    box-shadow: var(--main-box-shadow);
+}
+.info-text-block li, .info-text-block h4{
+    color: var(--main-color);
+    font-size: 1rem;
+}
 
 /* About us container ends */
 
