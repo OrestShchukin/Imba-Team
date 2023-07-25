@@ -777,7 +777,7 @@ header{
     justify-content: center;
     width: 41vh;
     height: 83vh;
-    background: center url('../img/iphone13.png');
+    background: center/cover url('../img/iphone13.png');
     text-shadow: 4px 9px 9px rgba(0,0,0,0.8);
     box-shadow: var(--main-box-shadow);
     border-radius: 2.3rem;
@@ -808,7 +808,7 @@ header{
     list-style: square inside;
 }
 .prices-element-inner ul li{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .prices-element-inner-price-container{
