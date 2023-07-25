@@ -399,6 +399,7 @@ header{
 }
 
 .peregin-trafiku-logo h2{
+    width: 100%;
     margin: 0;
     padding: 0;
     font-size: 12vw;
@@ -437,21 +438,19 @@ header{
 .info-block .button-one:hover{
     background-color: var(--main-color);
 }
+
 .info-block-element{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    width: 100%;
 }
+
 .info-block-header{
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 1rem;
-
-
-
 }
 
 .info-block-element h2{
@@ -473,7 +472,6 @@ header{
 .info-text-block{
     display: flex;
     width: 100%;
-    height: 50vh;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
@@ -1277,6 +1275,15 @@ footer li a{
   
   
 @media screen and (min-width: 1040px) {
+    .info-block-element{
+        min-height: 100vh;
+    }
+    .info-block-header{
+        height: 50vh;
+    }
+    .info-text-block{
+        height: 50vh;
+    }
     .lp-button:hover{
         background-color: var(--second-color);
         scale: 0.98 !important;
@@ -1324,6 +1331,11 @@ footer li a{
   
   
 @media screen and (max-width: 1040px) {
+    .info-block-element{
+        padding: 1rem 0rem;
+        gap: 1rem;
+        justify-content: space-between;
+    }
     .prices-element{
         background: none;
         height: auto;
