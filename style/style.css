@@ -289,7 +289,6 @@ header{
 /* About us container starts */
 .about-us-container{
     padding-top: calc(var(--header-height)*1.5);
-    min-height: 100vh;
 }
 
 .about-us-container h5{
@@ -1537,6 +1536,9 @@ footer li a{
 }
 
 @media screen and (max-width: 440px){
+    .about-us-container{
+        min-height: 100vh;
+    }
     .top-wave{
         margin-top: 0;
     }
