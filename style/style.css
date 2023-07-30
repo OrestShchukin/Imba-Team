@@ -394,10 +394,10 @@ header{
 }
 .about-us-image-box-logo{
     position: relative;
-    border-radius: 0px 0px 5rem 20rem;
+    border-radius: 0px 5rem 5rem 20rem;
     height: 100%;
     width:90%;
-    background: top right /cover url('../img/lex.png');
+    background: top left /cover url('../img/imbateam1.JPEG');
     z-index: 2;
     /* background-color: aqua; */
 }
@@ -679,7 +679,7 @@ header{
 }
 
 .qa-img{
-    background:  10% center/cover url('../img/imbateam1.JPEG');
+    background:  60% center/cover url('../img/instagrambg.jpg');
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -1555,7 +1555,7 @@ footer li a{
         z-index: 3;
     }
     .about-us-image-box-logo{
-        border-radius: 0px 0px 15rem 7rem;
+        border-radius: 10rem 1rem 15rem 7rem;
         background-position: 0 0;
     }
     .about-us-text-container h2{
